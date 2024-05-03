@@ -77,14 +77,14 @@ def drawbackground():
     screen.blit(img1, (20, 75))
 
     # button
-    pygame.draw.rect(screen, (145,122,103,255), (370, 140, 130, 40))
+    pygame.draw.rect(screen, (145,122,103,255), (370, 140, 130, 40), border_radius = 2)
     font1 = pygame.font.SysFont('ClearSans.ttf', 30)
     img1 = font1.render("New Game", True, (255, 255, 255))
     screen.blit(img1, (380, 150))
 
     # scores
-    pygame.draw.rect(screen, (186,172,158), (190, 0, 150, 55))
-    pygame.draw.rect(screen, (186,172,158), (350, 0, 150, 55))
+    pygame.draw.rect(screen, (186,172,158), (190, 0, 150, 55), border_radius = 2)
+    pygame.draw.rect(screen, (186,172,158), (350, 0, 150, 55), border_radius = 2)
     font1 = pygame.font.SysFont('ClearSans.ttf', 25)
     img1 = font1.render("Best: ", True, (255, 255, 255))
     img2 = font1.render(str(highscore), True, (255, 255, 255))
